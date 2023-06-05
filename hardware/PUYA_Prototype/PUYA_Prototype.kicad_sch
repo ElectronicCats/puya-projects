@@ -1348,7 +1348,7 @@
     (property "Value" "PY32F002AA15M6TU" (at 157.48 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "PY32F002:PY32F002AA15M" (at 146.05 43.18 0)
+    (property "Footprint" "Librarie:PY32F002AA15M" (at 146.05 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303271200_PUYA--PY32F002AA15M6TU_C5292058.pdf" (at 154.94 63.5 0)
