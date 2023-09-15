@@ -74,7 +74,8 @@ In your Command Line verify if GNU Toolchain Installation was correct.
 
 PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configured and ready to go!
 
-
+## Thanks / Contributors
+This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
 
 ## Maintainer
 
