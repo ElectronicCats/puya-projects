@@ -8,17 +8,55 @@ PUYA projects is an experiment to use low-cost ARM PUYA microcontrollers.
 - Git (Recommended)
 
 ## Tools Installation
-
 1. **Install GNU Arm Embedded Toolchain:**
    - Download the appropriate version from [Arm GNU Toolchain Downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) (We use the v12.3 rel1).
    - Add the tool's binary directory to the Windows PATH.
 
-2. **Open the Command Line**
+   To add the environment variable we look in the windows bar: "Edit environment variables for your account".
+
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/2b9cfc7f-a8c1-4389-b5f6-4fe8a261558a" height="100" />
+   <div align="center">
+      <sup><sub>Open "Edit environment variables for your account".</sub></sup>
+   </div>
+ </p>
+    
+ <p align="center">
+    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/a1d49e67-5ad8-4e1b-a387-8bf3bbd77506" height="350" />
+    <div align="center">
+      <sup><sub>Open "Environment Variables...".</sub></sup>
+    </div>
+ </p>
+
+<p align="center">
+    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3e97e27f-15d1-41a7-aba7-faefe7543999" height="200" />
+   <div align="center">
+      <sup><sub>Select "Path" and then "Edit...".</sub></sup>
+    </div>
+ </p>
+
+ <p align="center">
+    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/de063c06-850a-42ae-a969-8e72f928644e" height="350" />
+   <div align="center">
+      <sup><sub>Add "New" variable and add the path: "C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\12.3 rel1\bin".</sub></sup>
+    </div>
+ </p>
+
+2. **Open the Command Line:**
+To open the "Command Line" search "cmd" or "PowerShell" in your windows bar. In this case "Windows PowerShell" was used, and a window like the following should open:
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3f7d9ee9-3b99-4c0c-ba8a-25971affb48a" height="350" />
+ </p>
 
 3. **Verify GNU Toolchain Installation:**
 In your Command Line verify if GNU Toolchain Installation was correct.
    ```powershell
    &"C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\12.3 rel1\bin\arm-none-eabi-gcc" -v 
+   ```
+   If it has been installed correctly you should obtain a result similar to the following:
+<p align="center">
+  <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/de64e456-4086-4c73-be45-b424a11bfee0" height="350" />
+ </p>
 
 4.  **Install Make:**
     -   Download Make from [GnuWin](http://gnuwin32.sourceforge.net/packages/make.htm).
@@ -57,10 +95,16 @@ In your Command Line verify if GNU Toolchain Installation was correct.
     
     `make -j4` 
     
-7.  **Adjust Makefile for Your Chip:** Edit the Makefile to change the chip reference to `"PY32F002AX5"`.
-    
+7.  **Adjust Makefile for Your Chip:** Edit the Makefile to change the chip reference to `"PY32F002AX5"` (The "Makerfile" is located in the project folder.
+
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/bfe788a8-2e78-49db-9450-0b84e4ba5ffb" height="350" />
+   <div align="center">
+      <sup><sub>Located in the project folder.</sub></sup>
+   </div>
+ </p>
+
 8.  **Modify the Code:**
-    
     -   Open the `/User/main.c` file.
     -   Adjust pin references from ports B and F to A as needed.
 9.  **Compile Again:** Run `make -j4` to compile with the changes made.
