@@ -79,37 +79,54 @@ In your Command Line verify if GNU Toolchain Installation was correct.
     
 2.  **Copy the JLinkDevices Directory:** Copy `[PY32 Directory]/Misc/Flash/JLinkDevices` to `C:\Users\[User]\AppData\Roaming\SEGGER\JLinkDevices\`.
     
-3.  **Open Visual Studio Code:**
-    
-    -   Open the `py32f0-template-project` folder.
-4.  **Find the JLink Path:** Locate the path where JLink is installed, typically something like: `"C:\Program Files\SEGGER\JLink\JLink"`. Save it for future configurations.
-    
-5.  **Connect J-Link and Verify:** In Windows PowerShell, use the following command to verify the J-Link connection:
-    
-    powershellCopy code
-    
-    `&"C:\Program Files\SEGGER\JLink\JLink"` 
-    
-6.  **Compile the Project:** In the project folder, run:
-    Copy code
-    
-    `make -j4` 
-    
-7.  **Adjust Makefile for Your Chip:** Edit the Makefile to change the chip reference to `"PY32F002AX5"` (The "Makerfile" is located in the project folder.
+3. **Find the JLink Path:** Locate the path where JLink is installed, typically something like: `"C:\Program Files\SEGGER\JLink\JLink"`. Save it for future configurations.
 
+4.  **Connect J-Link and Verify:** In Windows PowerShell, use the following command to verify the J-Link connection:
+    
+    ```powershell
+       &"C:\Program Files\SEGGER\JLink\JLink"
+    ```
+
+5.  **Open Visual Studio Code:**
+    -   Open the `py32f0-template-project` folder.
+    
+6.  **Adjust Makefile for Your Chip** (The "Makerfile" is located in the project folder):
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/bfe788a8-2e78-49db-9450-0b84e4ba5ffb" height="350" />
    <div align="center">
       <sup><sub>Located in the project folder.</sub></sup>
    </div>
  </p>
+ 
+   -   Edit the Makefile to change the tools references, it uses the path references of the previously installed tools.
+
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/551f3017-d589-43ff-ab84-0dcf48a5dac5" height="250" />
+   <div align="center">
+      <sup><sub>Tools references.</sub></sup>
+   </div>
+ </p>
+
+   -   Edit the Makefile to change all the chip reference to `"PY32F002AX5"`.
+    
+7.  **Compile the Project:**
+   -   In Visual Studio Code open a terminal.
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/7ce44823-d533-45d1-a0cc-4d1285550cf6" />
+   <div align="center">
+      <sup><sub>Opening a Terminal.</sub></sup>
+   </div>
+ </p>
+ 
+   -   Execute: `make -j4` in the Visual Studio Code (VSC) terminal and verify that it compiles correctly, otherwise it could be that the "Makefile" has not been configured correctly.
 
 8.  **Modify the Code:**
     -   Open the `/User/main.c` file.
     -   Adjust pin references from ports B and F to A as needed.
-9.  **Compile Again:** Run `make -j4` to compile with the changes made.
+  
+9.  **Compile Again:** Execute `make clean` to clean the compilation and after `make -j4` to compile with the changes made.
     
-10.  **Program the Board:** Use `make flash` to upload the code to your board using J-Link.
+10.  **Program the Board:** Use `make flash` to upload the code to your board using J-Link. (You must have your J-Link connected to your computer and with the corresponding connections to the development board)
     
 11.  **Save Your Changes:** Remember to save the modified files before compiling.
     
@@ -117,6 +134,8 @@ In your Command Line verify if GNU Toolchain Installation was correct.
     
 
 PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configured and ready to go!
+
+
 
 ## Thanks / Contributors
 This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
