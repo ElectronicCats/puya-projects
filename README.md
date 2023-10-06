@@ -88,17 +88,22 @@ In your Command Line verify if GNU Toolchain Installation was correct.
     ```
 
 5.  **Open Visual Studio Code:**
+
     -   Open the `py32f0-template-project` folder.
     
-6.  **Adjust Makefile for Your Chip** (The "Makerfile" is located in the project folder):
+7.  **Adjust Makefile for Your Chip** (The "Makerfile" is located in the project folder):
+
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/bfe788a8-2e78-49db-9450-0b84e4ba5ffb" height="350" />
    <div align="center">
       <sup><sub>Located in the project folder.</sub></sup>
    </div>
  </p>
- 
-   -   Edit the Makefile to change the tools references, it uses the path references of the previously installed tools.
+   <ul>
+      <ul>
+         <li>Edit the Makefile to change the tools references, it uses the path references of the previously installed tools.</li>
+      </ul>
+   </ul> 
 
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/551f3017-d589-43ff-ab84-0dcf48a5dac5" height="250" />
@@ -107,10 +112,16 @@ In your Command Line verify if GNU Toolchain Installation was correct.
    </div>
  </p>
 
-   -   Edit the Makefile to change all the chip reference to `"PY32F002AX5"`.
+   <ul>
+      <ul>
+         <li>Edit the Makefile to change all the chip reference to `"PY32F002AX5"`.</li>
+      </ul>
+   </ul> 
     
 7.  **Compile the Project:**
-   -   In Visual Studio Code open a terminal.
+   
+    -   In Visual Studio Code open a terminal.
+
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/7ce44823-d533-45d1-a0cc-4d1285550cf6" />
    <div align="center">
