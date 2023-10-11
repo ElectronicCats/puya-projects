@@ -91,7 +91,7 @@ In your Command Line verify if GNU Toolchain Installation was correct.
 
     -   Open the `py32f0-template-project` folder.
     
-7.  **Adjust Makefile for Your Chip** (The "Makerfile" is located in the project folder):
+6.  **Adjust Makefile for Your Chip** (The "Makerfile" is located in the project folder):
 
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/bfe788a8-2e78-49db-9450-0b84e4ba5ffb" height="350" />
@@ -128,8 +128,13 @@ In your Command Line verify if GNU Toolchain Installation was correct.
       <sup><sub>Opening a Terminal.</sub></sup>
    </div>
  </p>
- 
-   -   Execute: `make -j4` in the Visual Studio Code (VSC) terminal and verify that it compiles correctly, otherwise it could be that the "Makefile" has not been configured correctly.
+
+
+  <ul>
+      <ul>
+         <li> Execute: <code> make -j4 </code> in the Visual Studio Code (VSC) terminal and verify that it compiles correctly, otherwise, it could be that the "Makefile" has not been configured correctly.</li>
+      </ul>
+   </ul>  
 
 8.  **Modify the Code:**
     -   Open the `/User/main.c` file.
@@ -146,6 +151,40 @@ In your Command Line verify if GNU Toolchain Installation was correct.
 
 PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configured and ready to go!
 
+## J-Link Connections to the Dev Board (Developing)
+
+**The development board can be programmed via SWD** (The J-link connections will depend on which J-Link and connector you are going to use).
+
+If you use the J-Link PLUS Compact:
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/90c8e64c-42e7-401e-ad5d-e81705bf7ebc" height="300"/>
+   <div align="center">
+      <sup><sub>J-Link PLUS Compact.</sub></sup>
+   </div>
+ </p>
+
+Pinout:
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/01dc8640-70b3-4258-a9e6-883d1f2ec195" height="250"/>
+   <div align="center">
+      <sup><sub>J-Link PLUS Compact connector.</sub></sup>
+   </div>
+ </p>
+ 
+If you use the J-Link EDU Mini:
+<table>
+        <tr>
+            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3a4db114-6958-40a9-8fc1-c1d3a16bd60a" alt="Imagen 1" height= 250>  
+               <div align="center"><sup><sub>J-Link EDU Mini.</sub></sup></div>
+            </td>
+            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/53cdcef2-9105-4639-8583-adb38de6cc1f" alt="Imagen 3" height= 250>
+               <div align="center"><sup><sub>J-Link EDU Mini Cable.</sub></sup></div>
+            </td>
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3684a6df-3576-4cc1-adb4-5092f04cea77" alt="Imagen 2" height= 250>
+               <div align="center"><sup><sub>J-Link EDU Mini PCB Adapter.</sub></sup></div>
+            </td>
+        </tr>
+</table>
 
 
 ## Thanks / Contributors
