@@ -153,8 +153,8 @@ PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configure
 
 ## J-Link Connections to the Dev Board (Developing)
 
-**The development board can be programmed via SWD** (The J-link connections will depend on which J-Link and connector you are going to use).
-
+**The development board can be programmed via SWD by a J-Link** (The J-link connections will depend on which J-Link and connector you are going to use).
+### Using the J-Link PLUS Compact
 If you use the J-Link PLUS Compact:
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/90c8e64c-42e7-401e-ad5d-e81705bf7ebc" height="300"/>
@@ -171,20 +171,26 @@ Pinout:
    </div>
  </p>
  
-If you use the J-Link EDU Mini:
+### Using the J-Link EDU Mini:
+
+To program the PUYA Dev Board with the J-Link EDU Mini we will need the following components:
 <table>
         <tr>
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 1" height= 250>  
+               <div align="center"><sup><sub>USB Cable.</sub></sup></div>
+            </td>
             <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3a4db114-6958-40a9-8fc1-c1d3a16bd60a" alt="Imagen 1" height= 250>  
                <div align="center"><sup><sub>J-Link EDU Mini.</sub></sup></div>
-            </td>
-            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/53cdcef2-9105-4639-8583-adb38de6cc1f" alt="Imagen 3" height= 250>
-               <div align="center"><sup><sub>J-Link EDU Mini Cable.</sub></sup></div>
             </td>
            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3684a6df-3576-4cc1-adb4-5092f04cea77" alt="Imagen 2" height= 250>
                <div align="center"><sup><sub>J-Link EDU Mini PCB Adapter.</sub></sup></div>
             </td>
+            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/53cdcef2-9105-4639-8583-adb38de6cc1f" alt="Imagen 3" height= 250>
+               <div align="center"><sup><sub>J-Link EDU Mini Cable.</sub></sup></div>
+            </td>
         </tr>
 </table>
+
 
 
 ## Thanks / Contributors
