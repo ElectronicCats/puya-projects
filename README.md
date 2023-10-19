@@ -214,7 +214,12 @@ To program the PUYA Dev Board with the J-Link EDU Mini we will need the followin
 As shown in the required material the J-Link EDU Mini PCB Adapter helps us a lot to identify where we need to connect each wire.
 
 ### Connection example:
-
+<p align="center">
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/0281e9c8-cc55-4ca9-a878-a3433ce1341b" height= 500>
+   <div align="center">
+      <sup><sub>Illustrative image.</sub></sup>
+   </div>
+ </p>
 
 ## Thanks / Contributors
 This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
