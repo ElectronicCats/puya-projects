@@ -154,14 +154,29 @@ PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configure
 ## J-Link Connections to the Dev Board (Developing)
 
 **The development board can be programmed via SWD by a J-Link** (The J-link connections will depend on which J-Link and connector you are going to use).
+
+### What is SWD? and How does it work?
+SWD is a bidirectional communication protocol that allows for fast and efficient microcontroller debugging and programming.
+
+SWD uses two signal lines, one for data (SWDIO) and one for clock (SWCLK), to communicate with the microcontroller. Through these lines, you can load programs into the microcontroller, stop code execution to inspect variables and debug errors, and perform other debugging operations. It is faster and more efficient than older debugging methods, such as JTAG.
+
 ### Using the J-Link PLUS Compact
 If you use the J-Link PLUS Compact:
-<p align="center">
-   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/90c8e64c-42e7-401e-ad5d-e81705bf7ebc" height="300"/>
-   <div align="center">
-      <sup><sub>J-Link PLUS Compact.</sub></sup>
-   </div>
- </p>
+
+<table>
+        <tr>
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 0" height= 250>  
+               <div align="center"><sup><sub>USB Cable.</sub></sup></div>
+            </td>
+            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/0aea4d75-74ab-48bc-a515-7fd1c19c8f10" alt="Imagen 1" height= 250>
+               <div align="center"><sup><sub>J-Link PLUS Compact.</sub></sup></div>
+            </td>
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3a7c5ae6-9633-4773-86f2-8364864c8ce5" alt="Imagen 2" height= 250>
+               <div align="center"><sup><sub>Dupont Wires.</sub></sup></div>
+            </td>
+        </tr>
+</table>
+
 
 Pinout:
 <p align="center">
@@ -176,10 +191,10 @@ Pinout:
 To program the PUYA Dev Board with the J-Link EDU Mini we will need the following components:
 <table>
         <tr>
-           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 1" height= 250>  
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 0" height= 250>  
                <div align="center"><sup><sub>USB Cable.</sub></sup></div>
             </td>
-            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3a4db114-6958-40a9-8fc1-c1d3a16bd60a" alt="Imagen 1" height= 250>  
+            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/8adad6ce-d872-43f5-882f-62f0f1e7ed49" alt="Imagen 1" height= 250>  
                <div align="center"><sup><sub>J-Link EDU Mini.</sub></sup></div>
             </td>
            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3684a6df-3576-4cc1-adb4-5092f04cea77" alt="Imagen 2" height= 250>
@@ -188,10 +203,11 @@ To program the PUYA Dev Board with the J-Link EDU Mini we will need the followin
             <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/53cdcef2-9105-4639-8583-adb38de6cc1f" alt="Imagen 3" height= 250>
                <div align="center"><sup><sub>J-Link EDU Mini Cable.</sub></sup></div>
             </td>
+           <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/3a7c5ae6-9633-4773-86f2-8364864c8ce5" alt="Imagen 2" height= 250>
+               <div align="center"><sup><sub>Dupont Wires.</sub></sup></div>
+            </td>
         </tr>
 </table>
-
-
 
 ## Thanks / Contributors
 This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
