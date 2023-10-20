@@ -152,12 +152,12 @@ PUYA Dev Board with the PY32F002AA15M6TU microcontroller should now be configure
 
 **The development board can be programmed via SWD by a J-Link** (The J-link connections will depend on which J-Link and connector you are going to use).
 
-### What is SWD? and How does it work?
+### What is SWD?
 SWD is a bidirectional communication protocol that allows for fast and efficient microcontroller debugging and programming.
 
 SWD uses two signal lines, one for data (SWDIO) and one for clock (SWCLK), to communicate with the microcontroller. Through these lines, you can load programs into the microcontroller, stop code execution to inspect variables and debug errors, and perform other debugging operations. It is faster and more efficient than older debugging methods, such as JTAG.
 
-## J-Link Connections to the Dev Board (Developing)
+## J-Link Connections to the Dev Board
 As mentioned earlier, SWD communication involves two key lines: **SWDIO** for data and **SWCLK** for the clock signal. However, in addition to these two lines, we also require two more connections:
 
 - **GND (Ground)**: This connection is essential to establish a common reference point for electrical potential and ensure proper communication.
@@ -167,7 +167,8 @@ As mentioned earlier, SWD communication involves two key lines: **SWDIO** for da
 
 ### Instructions to use the J-Link PLUS Compact
 To program the PUYA Dev Board with the J-Link PLUS Compact we will need the following components:
-<table>
+<div align="center">
+   <table>
         <tr>
            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 0" height= 250>  
                <div align="center"><sup><sub>USB Cable.</sub></sup></div>
@@ -179,7 +180,8 @@ To program the PUYA Dev Board with the J-Link PLUS Compact we will need the foll
                <div align="center"><sup><sub>Dupont Wires.</sub></sup></div>
             </td>
         </tr>
-</table>
+   </table>
+</div>
 
 In addition to this, in order to make the connections we must know what the J-Link pinout is, take the image below as a reference and connect each wire from your PUYA Dev Board to the corresponding one on the J-Link:
 <p align="center">
@@ -191,7 +193,8 @@ In addition to this, in order to make the connections we must know what the J-Li
 
 ### Instructions to use the J-Link EDU Mini:
 To program the PUYA Dev Board with the J-Link EDU Mini we will need the following components:
-<table>
+<div align="center">
+   <table>
         <tr>
            <td><img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/4b504111-3aa9-455b-9088-e81335c9b060" alt="Imagen 0" height= 250>  
                <div align="center"><sup><sub>USB Cable.</sub></sup></div>
@@ -209,7 +212,8 @@ To program the PUYA Dev Board with the J-Link EDU Mini we will need the followin
                <div align="center"><sup><sub>Dupont Wires.</sub></sup></div>
             </td>
         </tr>
-</table>
+   </table>
+</div>
 
 As shown in the required material, the J-Link EDU Mini PCB Adapter helps us a lot in identifying where we need to connect each wire from our PUYA development board to the PCB adapter. After connecting the corresponding wires you can program your board.
 
@@ -217,62 +221,63 @@ As shown in the required material, the J-Link EDU Mini PCB Adapter helps us a lo
 <p align="center">
    <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/0281e9c8-cc55-4ca9-a878-a3433ce1341b" height= 500>
    <div align="center">
-      <sup><sub>Illustrative image.</sub></sup>
+      <sup><sub>Illustrative image of connections.</sub></sup>
    </div>
  </p>
 
 The image above is just a reference image of the connections.
 The board is being powered directly with 5V and there are the following connections:
-<table>
-   <tr>
-    <th>PUYA Dev Board</th>
-    <th>J-Link Compact</th>
-    <th>J-Link EDU</th>
-    <th>Power Supply</th>
-  </tr>
-  <tr>
-    <td>3.3V</td>
-    <td>VTref</td>
-    <td>Vref</td>
-    <td>X</td>
-  </tr>
-  <tr>
-    <td>GND</td>
-    <td>GND</td>
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-  <tr>
-    <td>DIO</td>
-    <td>SWDIO</td>
-    <td>SWIO</td>
-    <td>X</td>
-  </tr>
-  <tr>
-    <td>CLK</td>
-    <td>SWCLK</td>
-    <td>CLK</td>
-    <td>X</td>
-  </tr>
-  <tr>
-    <td>5V</td>
-    <td>X</td>
-    <td>X</td>
-    <td>5V</td>
-  </tr>
-</table>
+<div align="center">
+   <table>
+      <tr>
+       <th>PUYA Dev Board</th>
+       <th>J-Link Compact</th>
+       <th>J-Link EDU</th>
+       <th>Power Supply</th>
+     </tr>
+     <tr>
+       <td>3.3V</td>
+       <td>VTref</td>
+       <td>Vref</td>
+       <td>X</td>
+     </tr>
+     <tr>
+       <td>GND</td>
+       <td>GND</td>
+       <td>GND</td>
+       <td>GND</td>
+     </tr>
+     <tr>
+       <td>DIO</td>
+       <td>SWDIO</td>
+       <td>SWIO</td>
+       <td>X</td>
+     </tr>
+     <tr>
+       <td>CLK</td>
+       <td>SWCLK</td>
+       <td>CLK</td>
+       <td>X</td>
+     </tr>
+     <tr>
+       <td>5V</td>
+       <td>X</td>
+       <td>X</td>
+       <td>5V</td>
+     </tr>
+   </table>
+</div>
 
 ## Thanks / Contributors
 This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
 
 ## Maintainer
 
-<a align="center" href="https://github.com/sponsors/ElectronicCats" >
-
-<img  src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png"  height="104" />
-
-</a>
-
+<div align="center">
+   <a href="https://github.com/sponsors/ElectronicCats" >
+      <img  src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png"  height="104" />
+   </a>
+</div>
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 [Agregando el link como referencia]: <https://github.com/ElectronicCats/Template-Project-KiCAD-CI>
