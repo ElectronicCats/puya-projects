@@ -221,6 +221,47 @@ As shown in the required material, the J-Link EDU Mini PCB Adapter helps us a lo
    </div>
  </p>
 
+The image above is just a reference image of the connections.
+The board is being powered directly with 5V and there are the following connections:
+<table>
+   <tr>
+    <th>PUYA Dev Board</th>
+    <th>J-Link Compact</th>
+    <th>J-Link EDU</th>
+    <th>Power Supply</th>
+  </tr>
+  <tr>
+    <td>3.3V</td>
+    <td>VTref</td>
+    <td>Vref</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>GND</td>
+    <td>GND</td>
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+  <tr>
+    <td>DIO</td>
+    <td>SWDIO</td>
+    <td>SWIO</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>CLK</td>
+    <td>SWCLK</td>
+    <td>CLK</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>5V</td>
+    <td>X</td>
+    <td>X</td>
+    <td>5V</td>
+  </tr>
+</table>
+
 ## Thanks / Contributors
 This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py32f0-template-project/tree/618b7ab8a95be73d5871b39afd02e14fb6a823dd)
 
