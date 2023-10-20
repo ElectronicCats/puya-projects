@@ -161,9 +161,9 @@ SWD uses two signal lines, one for data (SWDIO) and one for clock (SWCLK), to co
 As mentioned earlier, SWD communication involves two key lines: **SWDIO** for data and **SWCLK** for the clock signal. However, in addition to these two lines, we also require two more connections:
 
 - **GND (Ground)**: This connection is essential to establish a common reference point for electrical potential and ensure proper communication.
-- **VRef (Voltage Reference)**: A logic voltage level of 3.3V is typically required for the J-Link tool. This voltage, known as VRef, is necessary to support the communication between the J-Link and the target board."
+- **VRef (Voltage Reference)**: In this case, our PUYA Dev board works with a logical voltage level of 3.3V so it is necessary to provide this voltage to the J-Link tool. This voltage, known as VRef, is necessary to support the communication between the J-Link and the target board.
 
-**Note:** You need to power up the board with an external 5V power supply.
+**Note:** You need to power up the PUYA Dev board with an external 5V power supply.
 
 ### Instructions to use the J-Link PLUS Compact
 To program the PUYA Dev Board with the J-Link PLUS Compact we will need the following components:
@@ -181,14 +181,14 @@ To program the PUYA Dev Board with the J-Link PLUS Compact we will need the foll
         </tr>
 </table>
 
-In addition to this, in order to make the connections we must know what are the pinouts of the J-Link, take the image below as a reference to connect:
+In addition to this, in order to make the connections we must know what the J-Link pinout is, take the image below as a reference and connect each wire from your PUYA Dev Board to the corresponding one on the J-Link:
 <p align="center">
-   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/01dc8640-70b3-4258-a9e6-883d1f2ec195" height="250"/>
+   <img src="https://github.com/ElectronicCats/puya-projects/assets/44976441/2c44cddc-163c-4924-840f-2b99760bbca3" height="250"/>
    <div align="center">
       <sup><sub>J-Link PLUS Compact connector.</sub></sup>
    </div>
  </p>
- 
+
 ### Instructions to use the J-Link EDU Mini:
 To program the PUYA Dev Board with the J-Link EDU Mini we will need the following components:
 <table>
@@ -211,7 +211,7 @@ To program the PUYA Dev Board with the J-Link EDU Mini we will need the followin
         </tr>
 </table>
 
-As shown in the required material the J-Link EDU Mini PCB Adapter helps us a lot to identify where we need to connect each wire.
+As shown in the required material, the J-Link EDU Mini PCB Adapter helps us a lot in identifying where we need to connect each wire from our PUYA development board to the PCB adapter. After connecting the corresponding wires you can program your board.
 
 ### Connection example:
 <p align="center">
@@ -226,8 +226,7 @@ This example is based on the [Example Code PY32F0](https://github.com/TDLOGY/py3
 
 ## Maintainer
 
-<a
-href="https://github.com/sponsors/ElectronicCats">
+<a align="center" href="https://github.com/sponsors/ElectronicCats" >
 
 <img  src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png"  height="104" />
 
