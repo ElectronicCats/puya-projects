@@ -1,6 +1,7 @@
 # PUYA Projects
 PUYA projects is an experiment to use low-cost ARM PUYA microcontrollers.
 
+## FOR WINDOWS
 ## Requirements
 - PUYA microcontroller (We used a PUYA Dev Board with a PY32F002AA15M6TU microcontroller)
 - J-Link Segger Debugger
