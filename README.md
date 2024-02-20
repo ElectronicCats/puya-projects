@@ -10,7 +10,7 @@ PUYA projects is an experiment to use low-cost ARM PUYA microcontrollers.
 
 ## Tools Installation
 1. **Install GNU Arm Embedded Toolchain:**
-   - Download the appropriate version from [Arm GNU Toolchain Downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) (We use the v12.3 rel1).
+   - Download the appropriate version from [Arm GNU Toolchain Downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) (We use arm-none-eabi v12.3 rel1).
    - Add the tool's binary directory to the Windows PATH.
 
    To add the environment variable we look in the windows bar: "Edit environment variables for your account".
