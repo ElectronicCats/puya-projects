@@ -1,6 +1,30 @@
 # PUYA Projects
 PUYA projects is an experiment to use low-cost ARM PUYA microcontrollers.
 
+## PY32F002A key features and specifications:
+
+- MCU Core – 32-bit Arm Cortex-M0+ @ 24 MHz
+- Memory – 3KB SRAM
+- Storage – 20KB flash
+- Peripherals:
+  - 5 GPIOs (PF0, PA1, PA5, PA6, PA7)
+  - 1x USART
+  - 1x I2C, 1x SPI,  PWM
+  - Up to 9-channel 12-bit ADC
+- Timers
+  - 1x general-purpose 16-bit timers
+  - 1x 16-bit advanced control timer
+  - 1x low-power timer (LPTIM) to support wake-up from stop mode
+  - 1x SysTick timer
+  - 1x watchdog timers (IWDT)
+- Clocks
+  - 4/24MHz RC (HSI)
+  - 32.768KHz RC (LSI)
+  - 4~24MHz HSE (External crystal oscillator)
+  - Supply Voltage – 1.7V to 5.5V DC
+  - Packages – SOP8 (4.9×3.7×1.75 mm), SOP16, ESSOP10, TSSOP20
+  - Temperature Range – – 40°C to +85°C
+
 ## FOR WINDOWS
 ## Requirements
 - PUYA microcontroller (We used a PUYA Dev Board with a PY32F002AA15M6TU microcontroller)
