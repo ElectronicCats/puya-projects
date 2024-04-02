@@ -9,7 +9,7 @@ PUYA projects is an experiment to use low-cost ARM PUYA microcontrollers.
 - Peripherals:
   - 5 GPIOs (PF0, PA1, PA5, PA6, PA7)
   - 1x USART
-  - 1x I2C, 1x SPI,  PWM
+  - 1x I2C, 1x SPI,  1x PWM (PA1 AF13 TIM1_CH4)
   - Up to 9-channel 12-bit ADC
 - Timers
   - 1x general-purpose 16-bit timers
