@@ -26,4 +26,5 @@ fp-info-cache
 *.csv
 
 hardware/Template-KiCAD-Project-CI-backups/
+hardware/PUYA_Prototype_PY32F002AA15M6TU/PUYA_Prototype-backups
 hardware/PUYA_Prototype_PY32F030F28P6TU/PUYA_Prototype_PY32F030F28P6TU-backups
